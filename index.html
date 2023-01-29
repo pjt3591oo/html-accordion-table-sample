@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>동적 아코디언 테이블</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+  <div id="accordion-table">
+    <div id="head">
+      <div class="column">id</div>
+      <div class="column">이름</div>
+      <div class="column">나이</div>
+      <div class="column">주소</div>
+    </div>
+
+    <div id="body">
+    </div>
+  </div>
+
+  <div id="pagination">
+    <div class='page' data-page="0">0 페이지</div>
+    <div class='page' data-page="1">1 페이지</div>
+    <div class='page' data-page="2">2 페이지</div>
+  </div> 
+
+  <script src="./accordion.js"></script>
+  <script src="./index.js"></script>
+</body>
+</html>
