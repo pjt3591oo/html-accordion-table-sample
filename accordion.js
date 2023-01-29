@@ -4,10 +4,11 @@ class Accordion {
   #defaultRowClasses = [this.#defaultClass]
   #activeRowClasses = [this.#defaultClass, this.#activeClass]
 
-  constructor(target = 'body', data = []) {
+  constructor(target = 'body', data = [], options = {}) {
     this.target = target;
     this.bodyEl = document.getElementById(this.target);
 
+    this.options = options;
     this.data = data;
 
     this.#rerender();
